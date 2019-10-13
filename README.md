@@ -1,5 +1,5 @@
 # Cloudflare Custom Hostname Certificate Management
-These scripts manage viewing and updating certificates to Cloudflare custom hostnames 
+These simple python scripts manage viewing and updating certificates to Cloudflare custom hostnames. 
 
 ## Requirements
 
