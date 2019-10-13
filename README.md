@@ -3,8 +3,8 @@ These simple python scripts manage viewing and updating certificates to Cloudfla
 
 ## Requirements
 
-* Cloudflare Enterprise Account
-* SSL for SaaS enabled on Cloudflare Zone
+* Cloudflare enterprise account
+* SSL for SaaS enabled on a Cloudflare zone
 * Existing custom hostnames with custom certificates
 * Python 3
 
