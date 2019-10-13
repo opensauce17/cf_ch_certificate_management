@@ -15,7 +15,7 @@ These scripts manage viewing and updating certificates to Cloudflare custom host
 ## Get parameters for get_cert_info_cf.py
 `./get_cert_info_cf.py -h`
 
-# Get information about current certificate
+## Get information about current certificate
 `./get_cert_info_cf.py -n hostname -z zonename`
 
 # Update certificate
