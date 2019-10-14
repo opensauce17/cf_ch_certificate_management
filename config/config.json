@@ -2,6 +2,8 @@
     "auth": {
         "email": "",
         "token": "",
-        "zone": ""
+        "zone": "",
+        "content_type": "application/json",
+        "cache_control": "no-cache"
     }
 }
