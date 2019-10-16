@@ -39,6 +39,18 @@ content_type = data['auth']['content_type']
 email = data['auth']['email']
 token = data['auth']['token']
 
+
+ap = argparse.ArgumentParser()
+ap.add_argument("-n", "--hostname", required=True,
+                help="the hostname to check")
+ap.add_argument("-c", "--certificate", required=True,
+                help="the certificate file to upload")
+ap.add_argument("-k", "--key", required=True,
+                help="the key file to upload")
+ap.add_argument("-z", "--zone", required=True,
+                help="the zone to check")
+args = vars(ap.parse_args())
+
 ##FUNCTIONS##
 
 def check_zones_match_argument():
@@ -329,17 +341,6 @@ def update_cert_on_cloudflare(host_details):
 
 ##ENDFUNCTIONS##
 
-
-ap = argparse.ArgumentParser()
-ap.add_argument("-n", "--hostname", required=True,
-                help="the hostname to check")
-ap.add_argument("-c", "--certificate", required=True,
-                help="the certificate file to upload")
-ap.add_argument("-k", "--key", required=True,
-                help="the key file to upload")
-ap.add_argument("-z", "--zone", required=True,
-                help="the zone to check")
-args = vars(ap.parse_args())
 
 print('\n')
 print(bcolors.HEADER + BANNER + bcolors.ENDC)
