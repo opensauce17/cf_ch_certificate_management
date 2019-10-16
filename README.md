@@ -1,6 +1,8 @@
 # Cloudflare Custom Hostname Certificate Management
 These simple python scripts manage viewing and updating custom certificates to Cloudflare custom hostnames. 
 
+# Setup
+
 ## Requirements
 
 * Cloudflare enterprise account
@@ -10,6 +12,16 @@ These simple python scripts manage viewing and updating custom certificates to C
 
 ## Install the required python packages
 `pip install -r requirements.txt`
+
+## Edit configuration file for your zone
+
+The configuration file is config/congfig.json. Add the following:
+
+* Authentication details in the auth section
+* Zone names in the zone section
+* Zone id's in the zone_ids section
+
+It's important that zone names match zone id's. i.e zone1 name should match zone1 id
 
 # Review a certificate
 

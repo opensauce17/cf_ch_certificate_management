@@ -1,3 +1,6 @@
+# Developed by Michael Hyland 2019
+# Licensed under the GNU GENERAL PUBLIC LICENSE V3
+
 #!/usr/bin/env python
 
 import requests
@@ -309,7 +312,7 @@ def update_cert_on_cloudflare(host_details):
         for k, v in z.items():
             if args["zone"] == k:
                 r_add = requests.post(url_add.format(v), data=json.dumps(data), headers=headers)
-                
+
         result_add = json.loads(r_add.text)
 
         if result_add["success"] == False:

@@ -1,3 +1,6 @@
+# Developed by Michael Hyland 2019
+# Licensed under the GNU GENERAL PUBLIC LICENSE V3
+
 #!/usr/bin/env python
 
 import requests
