@@ -23,6 +23,14 @@ The configuration file is config/congfig.json. Add the following:
 
 It's important that zone names match zone id's. i.e zone1 name should match zone1 id
 
+# Add a new custom hostname
+
+## Get parameters for add_new_custom_hostname.py
+`add_new_custom_hostname.py -h`
+
+## Add the custom hostname
+`./add_new_custom_hostname.py -n hostname -o origin_server_name -c certificate.crt -k key.key -z zonename`
+
 # Review a certificate
 
 ## Get parameters for get_cert_info_cf.py
