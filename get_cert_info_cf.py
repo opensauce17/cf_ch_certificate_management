@@ -3,7 +3,6 @@
 # Licensed under the GNU GENERAL PUBLIC LICENSE V3
 
 
-
 import requests
 import json
 import argparse
